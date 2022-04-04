@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Ajax</title>
+
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Javascript -->
+    <script defer src="main.js"></script>
+    <!-- Google fuente -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    </link>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    </link>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    </link>
+
+</head>
+
+<body>
+    <div id="alert" class="alert">
+
+    </div>
+    
+    <div class="container">
+        <div class="container-forms">
+            <div class="container-header-navigation-form">
+
+                <div id="loginTap" class="navigation-item leftRadious selected">
+                    <p>Login</p>
+                </div>
+
+                <div id="registerTap" class="navigation-item rightRadious">
+                    <p>Register</p>
+                </div>
+
+            </div>
+
+            <div class="container-body-forms">
+
+                <div id="login" class="form-desing">
+                    <h3 class="text-center" > Login </h3>
+                    <form action="javascript:(0)" id="formSubmitLogin" method="POST">
+                        <div class="form-group">
+                            <input type="email" name="email" id="email" placeholder="email" autocomplete="true"
+                                class="form-control" required>
+
+                        </div>
+                        <div class="form-group">
+                            <input type="password" name="password" id="password" placeholder="passwordLogin"
+                                autocomplete="true" class="form-control" required>
+                        </div>
+                        <button class="btn btn-send btn-block" > Login </button>
+                    </form>
+                </div>
+
+                <div id="register" class="form-desing" >
+                    <h3 class="text-center" > Register </h3>
+                    <form action="javascript:(0)"  id="formSubmitRegister" method="POST">
+                        <div class="form-group">
+                            <input type="email" name="emailRegister" id="emailRegister" placeholder="email" 
+                            autocomplete="true" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" name="password" id="passwordRegister" 
+                            placeholder="password"
+                                autocomplete="true" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" name="password" id="passwordRegisterConfirm" 
+                            placeholder="password Confirm" autocomplete="true" class="form-control" required>
+                        </div>
+                        <button class="btn btn-send btn-block" > Register </button>
+                    </form>
+                    <div class="information-register">
+                    <p> You can only register with this data </p>
+                    <p> Username: eve.holt@reqres.in</p>
+                    <p> Password: pistol</p>
+                </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
